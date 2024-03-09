@@ -104,7 +104,6 @@ int main() {
     int *b = new int{ 0 };
     while(fin >> *a >> *b)
         vec -> push_back(std::make_pair(*a, *b));
-    
     delete a;
     delete b;
     a, b = nullptr, nullptr;
