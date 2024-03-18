@@ -6,7 +6,6 @@
 
 typedef std::map<int, std::vector<int>> dict;
 std::ifstream fin("graf.txt");
-
 void Moore_alg(dict *lista_de_adiacenta, int *nod_start, int *n){
     std::queue<int> q;
     int *l = new int[*n + 1];
@@ -39,7 +38,7 @@ int main(){
     dict *lista_de_adiacenta = new dict;
     fin >> *n;
     int *a, *b;
-    a = new int{ 0 };`
+    a = new int{ 0 };
     b = new int{ 0 };
     
     while(fin >> *a >> *b)
